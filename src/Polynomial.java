@@ -125,6 +125,12 @@ public class Polynomial {
     /**
      * Establece el valor del coeficiente
      * de grado x al valor coef.
+     * Sólo modifica, no agrega coeficientes
+     * que a la hora de crearse el Polynomial
+     * fueron 0, a fin de tener polinomios
+     * que puedan no empezar con su coeficiente
+     * mayor, lo cual entorpecería el uso de
+     * otros métodos.
      *
      * @param x
      * @param coef
